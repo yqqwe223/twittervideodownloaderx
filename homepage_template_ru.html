@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta name="msvalidate.01" content="5CCC6EE8FF816477D80A4DE459A738F1" />
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Загрузчик видео с X.com: вы можете скачать любое видео или GIF с помощью нашего загрузчика и конвертировать их в MP3 или GIF. Чего же вы ждёте? Попробуйте наш загрузчик видео с X.com прямо сейчас!">
+<meta name="keywords" content="Загрузчик видео X.com">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twittervideodownloaderx.com">
+<meta name="twitter:title" content="Загрузчик видео X.com — скачивайте видео и GIF с x.com">
+<meta name="twitter:description" content="Загрузчик видео с X.com: вы можете скачать любое видео или GIF с помощью нашего загрузчика и конвертировать их в MP3 или GIF. Чего же вы ждёте? Попробуйте наш загрузчик видео с X.com прямо сейчас!">
+<meta name="twitter:image" content="https://twittervideodownloaderx.com/static/logo.png  ">
+<meta name="twitter:image:alt" content="Загрузчик видео X.com — получайте видео и GIF с x.com">
+
+<meta property="og:title" content="Загрузчик видео X.com — получайте видео и GIF с x.com" />
+<meta property="og:description" content="Загрузчик видео с X.com: вы можете скачать любое видео или GIF с помощью нашего загрузчика и конвертировать их в MP3 или GIF. Чего же вы ждёте? Попробуйте наш загрузчик видео с X.com прямо сейчас!" />
+<meta property="og:image" content="https://twittervideodownloaderx.com/static/logo.png  " />
+<meta property="og:image:alt" content="Загрузчик видео X.com — получайте видео и GIF с x.com" />
+
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css    ">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css    " />
+<link href="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css  " rel="stylesheet">
+<script src="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js  "></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css  " rel="stylesheet">
+
+<link rel="stylesheet" href="/static/wait.css" >
+<link rel="stylesheet" href="/static/shareon.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com  ">
+<link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur  :wght@400..900&display=swap" rel="stylesheet">
+
+{{websiteSchema|safe}}
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="icon" href="{% static 'favicon.ico' %}">
+<title>Загрузчик видео X.com — скачивайте видео и GIF с x.com</title>
+</head>
+
+<body>
+
+ <style>
+    :root {
+      --bg: #ffffff;
+      --text: #14171a;
+      --light-text: #657786;
+      --border: #e1e8ed;
+      --accent: #1da1f2;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15202b;
+        --text: #ffffff;
+        --light-text: #8899a6;
+        --border: #38444d;
+        --card-bg: #192734;
+        --shadow: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px var(--shadow);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 35px 0 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+      color: var(--text);
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin: 25px 0 15px;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+      margin: 16px 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background-color: #eef9ff;
+      color: #0d6efd;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .note {
+      background-color: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 14px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+	
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+      }
+      p, li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+
+<div class="container-fluid text-break">
+<div class="row" style="background: linear-gradient(135deg, #1890E5 0% , #00C389 100%);">
+<div class="row" >
+    <div class="col-sm-2 d-none d-sm-block" >
+    </div>
+	<div class="col-sm-4 align-self-end"  >
+		<a href='https://twittervideodownloaderx.com' style="text-decoration:none"><img  data-src='/static/logo.png' src='/static/pix.jpg' class="img-fluid lazy align-text-bottom" alt='site logo'><span  class='align-text-bottom text-wrap fs-3' style="font-style:italic;color:white;font-family:'Tektur',sans-serif;">Twittervideodownloaderx</span></a>
+    </div>
+	
+<div class="col-sm-4 d-flex justify-content-end align-items-center" id="webdes">
+		<ul  style='padding-top:25px;color:white'  class="nav nav-tabs" >
+			<li style='display:inline;'><a href='https://twittervideodownloaderx.com' style='text-decoration: none;color:white'>Главная страница</a>&nbsp;&nbsp;</li>
+
+			<div class="text-end mb-3">
+				<div class="dropdown d-inline-block">
+					<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+							type="button"
+							id="langDropdown"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+					<i class="fa-solid fa-video"></i>
+					<span>article list</span>
+					</button>
+			
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+					{{paperlistele|safe}}
+					</ul>
+				</div>&nbsp;&nbsp;
+			</div>
+
+
+
+			<div class="text-end mb-3">
+				<div class="dropdown d-inline-block">
+					<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+							type="button"
+							id="langDropdown"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+					<i class="fa-solid fa-video"></i>
+					<span>Инструмент для скачивания видео</span>
+					</button>
+			
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+						{{toollistele|safe}}
+					</ul>
+				</div>&nbsp;&nbsp;
+			</div>
+			
+			<div class="text-end mb-3">
+				<div class="dropdown d-inline-block">
+					<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+							type="button"
+							id="langDropdown"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+					<i class="bi bi-globe"></i>
+					<span>🇷🇺 Русский</span>
+					</button>
+			
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+						{{langlistele|safe}}
+					</ul>
+				</div>
+			</div>
+		</ul>
+	 </div>
+	
+	<div class="col-sm-2" id='langweb' >
+	</div>
+</div>
+<div class="row">
+    <div class="col-md-2 d-none d-md-block">
+    </div> 
+    <div class="col-md-8"  style="border-width:1px;border-style: solid;background-color:#F5F7FA">
+		<br />
+		<div id='titleweb'  style='text-align:center;color:#2D3E50;font-family: "Tektur",sans-serif;' >
+			<h1 >Загрузчик видео X.com</h1>
+			<p >Загрузите видео X.com mp4 и конвертируйте их в mp3 и gif</p>
+		</div> 
+		<div id='ad' >
+		</div>
+		<div style='text-align:center;font-family: "Tektur",sans-serif;'>
+		
+			<input type='text' id='mainsource' style='width:80%;display:inline;color:#2D3E50' placeholder="Введите URL x.com здесь" >
+		</div>
+		<div style='text-align:center;color:#2D3E50;margin-top:1rem;font-family: "Tektur",sans-serif;'>
+			Пример URL : https://x.com/NYSE/status/1898373197227048995
+		</div>
+		<br/>
+		<div style='text-align:center'>
+		<button type="button" class="btn" id='bigbutton' style='background-color:#FF6B35;color:white'><i class="bi bi-download"></i> Скачать видео</button>
+		</div>
+		<br/>
+		
+		<div class="spinner-grow text-primary text-center" role="status" style='display:none;font-size:3em' id='loader'>
+			<span class="visually-hidden">Downloading...</span>
+		</div>
+		
+		<div class=""  id='hashshow' style='color:#2D3E50'>
+		</div> 
+		<br />
+	</div>
+	<div class="col-md-2 d-none d-md-block">
+	</div>
+</div>
+<div class="row" >
+	<p>&nbsp;<span>{% csrf_token %}</span></p>
+</div>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-2 d-none d-md-block">
+	</div> 
+	<div class="col-sm-8"  >
+	
+	<div class="container">
+    <h1>🐦 Загрузчик видео X.com</h1>
+
+    <p>
+      <strong>Twitter.com</strong> — это очень известная и популярная социальная сеть. Многие люди просматривают самые свежие и популярные новости на <strong>x.com</strong> и обмениваются сообщениями. Кроме того, на x.com размещено множество аудио- и видеоклипов. Некоторые видео имеют формат MP4, другие — формат GIF. Среди них много интересных видеороликов, например, юмористических. Часто возникает желание скачать такие видео и GIF, чтобы загрузить их на другие социальные сети и сайты. Однако при просмотре видео онлайн на x.com вы не найдете никакой опции для их скачивания.
+    </p>
+    <p>
+      Так как же скачать видео и GIF с x.com? На самом деле это очень просто. Сегодня мы расскажем, как с помощью загрузчика видео x.com на сайте <strong>twittervideodownloaderx.com</strong> скачивать любые видео и GIF из Twitter, а также конвертировать их в форматы MP3 и GIF.
+    </p>
+
+    <h2>Как использовать наш загрузчик X.com для скачивания видео и GIF</h2>
+    <p>
+      Сначала найдите твит, содержащий видео или GIF, которое вы хотите скачать, и откройте его. В адресной строке браузера появится URL этого твита. Скопируйте его с помощью мыши или нажав <span class="highlight">Ctrl + C</span>.
+    </p>
+    <p>
+      Затем перейдите на сайт <strong>twittervideodownloaderx.com</strong>. На главной странице вы увидите поле для ввода URL. Вставьте скопированную ссылку туда. Например:
+      <br><code>https://x.com/NYSE/status/1898373197227048995</code>
+    </p>
+    <p>
+      После этого нажмите большую красную кнопку <span class="highlight">«Скачать видео»</span>. Сайт начнёт обрабатывать ваш запрос. Примерно через 5 секунд появится информация о видео: формат, размер, название — и несколько вариантов загрузки.
+    </p>
+
+    <h3>1. Скачивание видео из Twitter</h3>
+    <p>
+      После нажатия кнопки «Скачать видео» большинство современных браузеров откроют новую страницу и автоматически начнут воспроизведение видео. Если вы хотите не смотреть, а скачать видео, нажмите на три точки <span class="highlight">(⋯)</span> в правом верхнем углу видеоплеера и выберите пункт <span class="highlight">«Скачать»</span>, чтобы сохранить файл в формате MP4.
+    </p>
+
+    <h3>2. Преобразование видео Twitter в MP3</h3>
+    <p>
+      Если вам нужен только звук, нажмите кнопку <span class="highlight">«Конвертировать в MP3»</span>. После завершения обработки появится кнопка «Скачать MP3». Нажмите её — браузер откроет страницу аудиоплеера. Как и в случае с видео, нажмите три точки в правом верхнем углу и выберите «Скачать», чтобы сохранить аудиофайл.
+    </p>
+
+    <h3>3. Преобразование видео Twitter в GIF и скачивание</h3>
+    <p>
+      Нажмите кнопку <span class="highlight">«Конвертировать в GIF»</span>, и система преобразует видео в анимированный GIF. После завершения нажмите кнопку <span class="highlight">«Скачать GIF»</span>, чтобы сохранить файл. Формат GIF обладает отличной совместимостью и подходит для загрузки на платформы, не поддерживающие MP4.
+    </p>
+
+    <h2>Преимущества нашего загрузчика видео Twitter</h2>
+    <ol>
+      <li><strong>Не требуется устанавливать никакое ПО</strong>: достаточно современного браузера и подключения к интернету.</li>
+      <li><strong>Очень прост в использовании</strong>: скопировать ссылку → вставить → нажать «Скачать» — всего три шага.</li>
+      <li><strong>Очень высокая скорость</strong>: обработка или конвертация обычно занимает менее 5 секунд.</li>
+      <li><strong>Неограниченные загрузки</strong>: нет ограничений по количеству или объёму — скачивайте сколько угодно и когда угодно.</li>
+      <li><strong>Отличная совместимость</strong>: поддерживает все основные браузеры — Chrome, Firefox, Safari, Edge, Opera и др.</li>
+      <li><strong>Не требуется регистрация</strong>: мы не собираем никаких персональных данных — использование полностью анонимно.</li>
+    </ol>
+
+    <div class="note">
+      💡 <strong>Важно</strong>: этот инструмент предназначен только для личного обучения и обмена. Не скачивайте защищённый авторским правом контент в коммерческих целях.
+    </div>
+
+    <h2>Часто задаваемые вопросы (FAQ)</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">1. Куда сохраняются скачанные видео или GIF из Twitter?</div>
+      <div>Они сохраняются в папку загрузок по умолчанию вашего браузера. Вы можете найти или изменить этот путь в настройках браузера.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. Почему видео автоматически воспроизводится, а не скачивается при нажатии кнопки?</div>
+      <div>Это стандартное поведение браузера. Чтобы скачать файл, откройте страницу с плеером, нажмите три точки (⋯) в правом верхнем углу и выберите «Скачать».</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">3. Можно ли использовать загрузчик на iPhone или Android?</div>
+      <div>Да! Достаточно, чтобы ваше устройство поддерживало современный браузер (например, Safari или Chrome).</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">4. Безопасно ли скачивать видео с вашего сайта?</div>
+      <div>Абсолютно безопасно. Мы не встраиваем рекламу, не отслеживаем пользователей и не содержим вирусов или вредоносных программ.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">5. Можно ли скачивать прямые трансляции?</div>
+      <div>Да. Просто скопируйте URL твита с прямой трансляцией и вставьте его — загрузка будет работать так же, как и с обычным видео.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">6. Сохраняете ли вы скачанные мной видео?</div>
+      <div>Нет. Все файлы загружаются напрямую с X.com. Наши серверы не кэшируют и не хранят никакой контент.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">7. Являетесь ли вы официальным продуктом Twitter?</div>
+      <div>Нет. Наш инструмент не имеет никакой официальной связи с Twitter, Inc. (ныне X Corp.).</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">8. Я не могу найти скачанный файл — где он?</div>
+      <div>Проверьте историю загрузок в браузере (обычно сочетание <code>Ctrl+J</code> на Windows или <code>Cmd+Shift+J</code> на Mac).</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">9. Почему не удаётся скачать видео?</div>
+      <div>Возможные причины: (a) твит не содержит видео; (b) твит приватный; (c) временный сбой на сервере. Убедитесь, что вы вставили правильный URL.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">10. Как пользоваться загрузчиком на телефоне?</div>
+      <div>Точно так же, как на компьютере: откройте браузер → перейдите на наш сайт → вставьте ссылку → скачайте.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">11. Нужно ли регистрироваться для использования?</div>
+      <div>Нет. Использование полностью анонимно — не требуется аккаунт, email или номер телефона.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">12. Этот инструмент бесплатный?</div>
+      <div>Да! Он полностью бесплатен и останется таким навсегда.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">13. Почему вы создали этот инструмент?</div>
+      <div>Автор — пользователь Twitter и программист. Он создал этот инструмент, потому что на платформе отсутствует функция загрузки, и продолжает предоставлять его бесплатно всем желающим.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">14. Какое качество у скачиваемого видео?</div>
+      <div>Обычно 640×480 или 1280×720 (если исходное видео поддерживает), в формате MP4 — универсальном и широко поддерживаемом.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">15. Законно ли использовать этот инструмент?</div>
+      <div>Да. Мы получаем медиаданные только через общедоступные интерфейсы и не храним, не распространяем и не изменяем контент.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">16–18. Конфиденциальность, хранение и ограничения</div>
+      <div>Мы <strong>не собираем данные пользователей</strong>, <strong>не храним никакие видео/GIF/MP3</strong> и <strong>не устанавливаем никаких ограничений на загрузки</strong>. Серверы twittervideodownloaderx.com не размещают пиратский или защищённый авторским правом контент. Все файлы передаются напрямую на ваше устройство.</div>
+    </div>
+
+  </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© {{year_string}} x.com Video Downloader. Все права защищены.</p>
+            <p>Данный сайт не имеет официальной связи с x.com, Inc. | 
+			<a href="/privacy-policy" style="color: #00c6ff;">Политика конфиденциальности</a> | 
+			<a href="/terms-of-service" style="color: #00c6ff;">Условия использования</a> | 
+			<a href="/about-us" style="color: #00c6ff;">О нас</a> | 
+			<a href="/contact-us" style="color: #00c6ff;">Связаться с нами</a>
+			</p>
+            <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+                Данный инструмент предназначен исключительно для личного обучения и исследований. Пользователь несёт полную юридическую ответственность за его использование.
+            </p>
+            <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+                Скачивание контента, защищённого авторским правом, может нарушать действующее законодательство. Пожалуйста, соблюдайте законы вашей страны.
+            </p>
+        </footer>
+	</div>
+	<div class="col-sm-2 d-none d-md-block">
+	</div>
+</div>
+</div>
+<script src="/static/jquery.min.js"  crossorigin="anonymous"></script>
+<script src="/static/popper.min.js"  crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-3339068484857413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="/static/jquery.lazy.min.js"></script>
+
+<script type="text/javascript" src="/static/shareon.iife.js" defer  init></script>
+<script>
+	$(function() {
+		$('.lazy').Lazy();
+	});
+</script>
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"url": "https://twittervideodownloaderx.com",
+	"logo": "https://twittervideodownloaderx.com/static/logo.png"
+	}
+</script>
+
+<script>
+function mp3turn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#mp3placeholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#mp3placeholder').append(spinner+'<br />Converting Video to Mp3</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getmp3', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#mp3placeholder').html('NO result');
+				return;
+				}
+			var mp3filepath=response.mp3filepath;
+			//alert(htimage);
+			$('#mp3placeholder').empty();
+			var intext='';
+			var intext='<a href="/'+mp3filepath+'" target="_blank" class="btn btn-danger">Download Video Mp3</a>';
+			$('#mp3placeholder').html(intext);
+			}
+		else{
+			$('#mp3placeholder').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+};
+function gifturn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#gifplaceholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#gifplaceholder').append(spinner+'<br />Converting Video to Gif</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getgif', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#gifplaceholder').html('NO result');
+				return;
+				}
+			var giffilepath=response.giffilepath;
+			//alert(htimage);
+			$('#gifplaceholder').empty();
+			var intext='';
+			var intext='<a href="/'+giffilepath+'" target="_blank" class="btn btn-danger">Download Video GIF</a>';
+			$('#gifplaceholder').html(intext);
+			}
+		else{
+			$('#gifplaceholder').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+};
+$(document).ready(function() {
+$("#mainsource").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#bigbutton").click();
+    }
+});
+$('#bigbutton').on('click',function(){
+	var inputvalue = $('#mainsource').val();
+	if (inputvalue==='')
+	{
+		return false;
+	}
+	$('#hashshow').empty();
+	var spinner='<div style="text-align:center;"><span style="font-size:1.5em;"><span style="background-color:#007FFF;" class="spinner-loader" ></span>';
+	$('#hashshow').append(spinner+'<br />Получение видео с Twitter</span></div>');
+	
+	//document.getElementById("loader").style.display = "block";
+
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getitem', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			document.getElementById("loader").style.display = "none";
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#hashshow').html('NO result');
+				return;
+				}
+			var vtitle=response.vtitle;
+			//alert(htimage);
+			var vdes=response.vdes;
+			//alert(htsimage);
+			
+			var vuploader=response.vuploader;
+			
+			var vuploader_url=encodeURI(response.vuploader_url);
+			var vupload_date=response.vupload_date;
+			var vwidth=response.vwidth;
+			var vheight=response.vheight;
+			var vaspect_ratio=response.vaspect_ratio;
+			
+			var vthu=encodeURI(response.vthu);
+			//alert(trunttext);
+			var vduration=response.vduration;
+			//alert(videoinfolist);
+			var vurl = encodeURI(response.vurl);
+			//alert(arrayLength);
+			var vdate = response.vdate;
+			//alert(arrayLength);
+			var vres = response.vres;
+			//alert(arrayLength);
+			var vext = response.vext;
+			//alert(arrayLength);
+			
+			var formatslist = response.formatslist;
+			var thumbnailslist = response.thumbnailslist;
+			
+
+			$('#hashshow').empty();
+			var intext='';
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>'+vtitle+'</b></div><div><img src="'+vthu+'"  class="img-fluid" /></div>';
+			
+
+			var intext=intext+'</div><div class="col-sm-6 align-self-end" ><br /><br />';
+			
+				for (let i = 0; i < formatslist.length; i++) {
+					turl = encodeURI(formatslist[i][0]);
+					tres = formatslist[i][1];
+					var intext = intext + '<div><i class="bi bi-cloud-download"></i> <a style="text-decoration:none" href="' + turl + '">Скачать видео (разрешение ' + tres + ')</a></div>';
+				}
+				
+				var intext = intext + '<br />';
+				
+				for (let i = 0; i < thumbnailslist.length; i++) {
+					turl = encodeURI(thumbnailslist[i][0]);
+					tres = thumbnailslist[i][1];
+					var intext = intext + '<div><i class="bi bi-file-image"></i> <a style="text-decoration:none" href="' + turl + '">Скачать миниатюру (разрешение ' + tres + ')</a></div>';
+				}
+				
+				var intext = intext + '</div></div><hr />';
+				
+				var intext = intext + '<div class="row" ><div class="col-sm-6" ><div><b>Название: </b>' + vtitle + '</div><div><b>Описание: </b>' + vdes + '</div><div><b>Автор: </b>' + vuploader + '</div><div><b>Ссылка на автора: </b>' + vuploader_url + '</div><div><b>Длительность: </b>' + vduration + ' с</div></div>';
+				
+				var intext = intext + '<div class="col-sm-6" ><div><b>Дата загрузки: </b>' + vdate + '</div><div><b>Ширина: </b>' + vwidth + '</div><div><b>Высота: </b>' + vheight + '</div><div><b>Разрешение: </b>' + vres + '</div><div><b>Соотношение сторон: </b>' + vaspect_ratio + '</div></div></div>';
+
+
+			var intext=intext+'<div class="row" >'+'<div class="shareon shadow bg-light bg-gradient"><a class="facebook" data-title="'+vtitle+'" ><span  style="font-size:1em">facebook</span></a><a class="linkedin" data-title="'+vtitle+'" ><span style="font-size:1em">linkedin</span></a>	<a class="mastodon" data-title="'+vtitle+'"><span  style="font-size:1em">mastodon</span></a><a class="messenger" data-fb-app-id="0123456789012345" data-title="'+vtitle+'"><span  style="font-size:1em">messenger</span></a><a class="pinterest" data-title="'+vtitle+'"><span  style="font-size:1em“>pinterest</span></a><a class="reddit" data-title="'+vtitle+'"><span  style="font-size:0.5em">reddit</span></a><a class="telegram" data-title="'+vtitle+'"><span  style="font-size:1em">telegram</span></a><a class="twitter" data-title="'+vtitle+'"><span  style="font-size:1em“>twitter</span></a><a class="viber" data-title="'+vtitle+'"><span  style="font-size:1em">viber</span></a><a class="vkontakte" data-title="'+vtitle+'"><span  style="font-size:1em">vkontakte</span></a><a class="whatsapp" data-title="'+vtitle+'"><span  style="font-size:1em">whatsapp</span></a></div>';
+			
+			
+			var intext=intext+'</div>';
+			
+			//$('#hashshow').append('<div>'+'<img src="'+htsimage+'" />'+'</div>'+'<p>'+trunttext+'</p>');
+			$('#hashshow').html(intext);
+			}
+		else{
+			document.getElementById("loader").style.display = "none";
+			$('#hashshow').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.droplang').click(function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	if (selectedValue==='en')
+	{
+		window.location=domainname+'/{{baseurlstring}}';
+	}
+	else
+	{
+	window.location=domainname+'/{{baseurlstring}}'+selectedValue;
+	}
+  });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.droptool').click(function(e) {
+    e.preventDefault();
+    var selectedtoolValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	var current_lang='{{lang}}';
+	
+	if (selectedtoolValue==='x_twitter')
+	{
+		if (current_lang==='en')
+			{
+			window.location=domainname;
+			}
+		else
+			{
+			window.location=domainname+'/'+current_lang;
+			}
+	}
+	else
+	{
+		if (current_lang==='en')
+		
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader';
+			}
+		else
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader_'+'{{lang}}';
+			}
+	}
+  });
+});
+</script>
+
+<script type="text/javascript">
+var sc_project=11698515; 
+var sc_invisible=1; 
+var sc_security="38970939"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+
+<link  rel="stylesheet" href='/static/wait.css' >
+</body>
+</html>
